@@ -25,6 +25,7 @@
         "terminalDataWriteEvent",
         "terminalExecuteCommandEvent",
         "contribIssueReporter",
+        "notebookVariableProvider",
         "codeActionAI"
     ],
     "author": {
