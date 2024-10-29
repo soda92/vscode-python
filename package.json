@@ -592,8 +592,8 @@
                         "native"
                     ],
                     "tags": [
-                        "experimental",
-                        "onExP"
+                        "onExP",
+                        "preview"
                     ],
                     "scope": "machine",
                     "type": "string"
@@ -675,8 +675,8 @@
                     "scope": "resource",
                     "type": "boolean",
                     "tags": [
-                        "experimental",
-                        "onExP"
+                        "onExP",
+                        "preview"
                     ]
                 },
                 "python.REPL.provideVariables": {
