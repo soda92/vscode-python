@@ -33,7 +33,7 @@ export async function registerStartNativeReplCommand(
             if (interpreter) {
                 if (interpreter) {
                     const nativeRepl = await getNativeRepl(interpreter, disposables);
-                    await nativeRepl.sendToNativeRepl();
+                    await nativeRepl.sendToNativeRepl(undefined, false);
                 }
             }
         }),
