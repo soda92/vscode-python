@@ -6,7 +6,8 @@ import json
 import os
 import pathlib
 import sys
-from typing import Dict, List, Optional, Sequence, Tuple, Union
+from collections.abc import Sequence
+from typing import Optional, Union
 
 LIB_ROOT = pathlib.Path(__file__).parent / "lib" / "python"
 sys.path.insert(0, os.fspath(LIB_ROOT))
@@ -43,7 +44,7 @@ def parse_requirements(line: str) -> Optional[Requirement]:
     return None
 
 
-def process_requirements(req_file: pathlib.Path) -> List[Dict[str, Union[str, int]]]:
+def process_requirements(req_file: pathlib.Path) -> list[dict[str, Union[str, int]]]:
     diagnostics = []
     for n, line in enumerate(req_file.read_text(encoding="utf-8").splitlines()):
         if line.startswith(("#", "-", " ")) or line == "":
@@ -69,7 +70,7 @@ def process_requirements(req_file: pathlib.Path) -> List[Dict[str, Union[str, in
     return diagnostics
 
 
-def get_pos(lines: List[str], text: str) -> Tuple[int, int, int, int]:
+def get_pos(lines: list[str], text: str) -> tuple[int, int, int, int]:
     for n, line in enumerate(lines):
         index = line.find(text)
         if index >= 0:
@@ -77,7 +78,7 @@ def get_pos(lines: List[str], text: str) -> Tuple[int, int, int, int]:
     return (0, 0, 0, 0)
 
 
-def process_pyproject(req_file: pathlib.Path) -> List[Dict[str, Union[str, int]]]:
+def process_pyproject(req_file: pathlib.Path) -> list[dict[str, Union[str, int]]]:
     diagnostics = []
     try:
         raw_text = req_file.read_text(encoding="utf-8")
@@ -109,7 +110,7 @@ def process_pyproject(req_file: pathlib.Path) -> List[Dict[str, Union[str, int]]
     return diagnostics
 
 
-def get_diagnostics(req_file: pathlib.Path) -> List[Dict[str, Union[str, int]]]:
+def get_diagnostics(req_file: pathlib.Path) -> list[dict[str, Union[str, int]]]:
     diagnostics = []
     if not req_file.exists():
         return diagnostics
