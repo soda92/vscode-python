@@ -13,3 +13,6 @@ build:
 
 update-libs:
 	python -m pip install -t ./python_files/lib/jedilsp --no-cache-dir --implementation py --no-deps --require-hashes --only-binary :all: -r ./python_files/jedilsp_requirements/requirements.txt
+
+update-libs-dev:
+	python -m pip install -t ./python_files/lib/jedilsp --no-cache-dir --implementation py --no-deps --only-binary :all: -e C:/src/jedi-language-server --upgrade
