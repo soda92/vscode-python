@@ -4,5 +4,5 @@
 # 1) Install `uv` https://docs.astral.sh/uv/getting-started/installation/
 # 2) uv pip compile --generate-hashes --upgrade python_files\jedilsp_requirements\requirements.in > python_files\jedilsp_requirements\requirements.txt
 
-jedi-language-server>=0.34.3
+soda-jedi-ls>=2025.3.14.1
 pygls>=0.10.3
