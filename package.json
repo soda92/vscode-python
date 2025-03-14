@@ -1,6 +1,6 @@
 {
-    "name": "python",
-    "displayName": "Python",
+    "name": "soda-python",
+    "displayName": "Python (soda fork)",
     "description": "Python language support with extension access points for IntelliSense (Pylance), Debugging (Python Debugger), linting, formatting, refactoring, unit tests, and more.",
     "version": "2025.3.0-dev",
     "featureFlags": {
@@ -16,7 +16,7 @@
             "description": "Only Partial IntelliSense supported."
         }
     },
-    "publisher": "ms-python",
+    "publisher": "soda92",
     "enabledApiProposals": [
         "contribEditorContentMenu",
         "quickPickSortByLabel",
@@ -29,7 +29,7 @@
         "notebookVariableProvider"
     ],
     "author": {
-        "name": "Microsoft Corporation"
+        "name": "soda92"
     },
     "license": "MIT",
     "homepage": "https://github.com/Microsoft/vscode-python",
