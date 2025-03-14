@@ -37,7 +37,7 @@ pygls==1.3.1 \
     # via
     #   -r python_files/jedilsp_requirements/requirements.in
     #   soda-jedi-ls
-soda-jedi-ls==2025.3.14.1 \
-    --hash=sha256:070cb6eaf612f486489dd2fa09744bb8852f2d83b1f2efb6dd4404e413f4bfea \
-    --hash=sha256:3256b260d6c0341c67abc55bf797efddba7ea834b436517b264aff85e7392af9
+soda-jedi-ls==2025.3.14.2 \
+    --hash=sha256:70910d921353d88134db7e135018211f009078c8d504c3b85c5756168b95844c \
+    --hash=sha256:e6dfbdadf51fc40b50dcf7e77f755a5c085dbfb2c276c9e2ff01ceb09167c592
     # via -r python_files/jedilsp_requirements/requirements.in
